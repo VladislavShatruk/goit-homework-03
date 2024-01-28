@@ -74,7 +74,7 @@ button {
     align-items: center;
     width: 1158px;
     padding: 0 15px;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 }
 
 .header-navigation {
@@ -102,6 +102,7 @@ button {
     font-weight: 500;
     line-height: 1.50;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-menu-link:hover {
@@ -374,6 +375,7 @@ address {
 
 .footer {
     padding: 100px 0;
+    display: inline-block;
 }
 
 .footer-container {
