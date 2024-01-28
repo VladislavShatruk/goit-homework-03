@@ -55,6 +55,8 @@ button {
     margin: 0 auto;
     }
 
+
+    
 /* ================================== */
 /* HEADER */
 /* ================================== */
@@ -78,14 +80,14 @@ button {
     align-items: center;
     flex-grow: 1;
     justify-content: space-between;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 }
 
 .header-menu {
     display: flex;
     margin-right: 332px;
     gap: 40px;
-
+    padding: 24px 0;
 }
 
 .header-menu-item {
@@ -377,6 +379,7 @@ address {
     display: flex;
     flex-direction: column;
     padding: 100px 0;
+    display: inline-block;
 }
 
 
@@ -395,7 +398,7 @@ address {
 }
 
 .footer-container a{
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .footer-logo-subject {
@@ -406,7 +409,7 @@ address {
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .footer-text {
