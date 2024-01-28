@@ -374,9 +374,8 @@ address {
 
 .footer-container {
     background-color: #2E2F42;
-    display: flex;
-    flex-direction: column;
     padding: 100px 0;
+    height: 312px;
 }
 
 
@@ -391,9 +390,6 @@ address {
     text-transform: uppercase;
     margin-right: 1169px;
     margin-left: 156px;
-}
-
-.logo-footer-link {
     display: inline-block;
     margin-bottom: 16px;
 }
