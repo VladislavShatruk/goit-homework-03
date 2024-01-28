@@ -33,6 +33,20 @@ button {
     cursor: pointer;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .container {
     width: 100%;
     max-width: 1440px;
@@ -69,8 +83,12 @@ button {
     display: flex;
     margin-right: 332px;
     gap: 40px;
+}
+
+.header-menu-item {
     padding: 24px 0;
 }
+
 .header-menu-link {
     color: #2E2F42;
     font-size: 16px;
@@ -78,6 +96,15 @@ button {
     line-height: 1.50;
     letter-spacing: 0.02em;
 }
+
+.header-menu-link:hover {
+    color:#404bbf
+}
+
+.header-menu-link:focus {
+    color:#404bbf
+}
+
 .logo {
     color:#2E2F42;
     font-size: 18px;
@@ -89,6 +116,7 @@ button {
     margin-right: 76px
 
 }
+
 .logo-subject {
     color: #2e2f42;
 font-family: Raleway;
@@ -107,14 +135,6 @@ text-transform: uppercase;
     display: flex;
     gap: 40px;
 
-}
-
-.header-menu-link:hover {
-    color:#404bbf
-}
-
-.header-menu-link:focus {
-    color:#404bbf
 }
 
 .header-address-link {
@@ -141,13 +161,11 @@ address {
 
 
 .hero {
-    padding-bottom: 60px;
 }
 
 .hero-container {
     background-color:#2E2F42;
-    width: 100%;
-    padding: 188px 472px 188px 472px;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -156,11 +174,14 @@ address {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    max-width: 496;
-    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 472px 48px 472px;
 }
 
 .hero-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
     color:#FFF;
     background-color: #4D5AE5;
     font-family: inherit;
@@ -168,9 +189,10 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-right: 160px;
-    margin-left: 160px;
-    padding: 16px 32px;
+    margin-right: 636px;
+    margin-left: 635px;
+    border: none;
+    border-radius: 4px;
 }
 
 .hero-btn:hover {
@@ -189,8 +211,7 @@ address {
 
 .features {
     background-color: #FFF;
-    padding-top: 60px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 .features-item {
     width: calc((100% - 72px) / 4);
@@ -226,6 +247,17 @@ address {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.team-title {
+    color:#2E2F42;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
 .team-list {
     display: flex;
     gap: 24px;
@@ -235,29 +267,20 @@ address {
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    width: 296px;
+    width: calc((100% - 72px) / 4);
     height: 348px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-img {
+    
 }
 
 .team-cart-content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     padding: 32px 0;
-}
-
-.team-title {
-    color:#2E2F42;
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    padding-bottom: 72px;
-}
-
-.team-list-img {
-    
+    gap: 8px;
 }
 
 .team-list-title {
@@ -267,6 +290,7 @@ address {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -286,7 +310,7 @@ address {
 .portfolio {
     background-color: #FFF;
     padding-top: 120px;
-    padding-bottom: 120px;
+    margin-bottom: 72px;
 }
 
 .portfolio-title {
@@ -305,13 +329,15 @@ address {
     gap: 48px 24px;
 }
 .portfolio-card {
-    flex-basis: calc((100%-48px)/3);
+    /* flex-basis: calc((100%-48px)/3); */
+    width: calc((100% - 48px) / 3); 
 }
 .portfolio-card-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 32px 0;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 }
 
 .portfolio-card-title {
@@ -320,6 +346,7 @@ address {
     font-weight: 500;
     line-height: 1.20;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio-card-text {
@@ -336,23 +363,35 @@ address {
 
 
 .footer {
+    
+}
+
+.footer-container {
     background-color: #2E2F42;
-    width: 1440px;
-    height: 312px;
-}
-
-.fotter-container {
-
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.logo {
-
+.logo-footer {
+    color:#4D5AE5;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 1169px;
+    margin-left: 156px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-subject {
     color: #F4F4FD;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
@@ -365,4 +404,7 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    margin-right: 1020px;
+    margin-left: 156px;
 }
