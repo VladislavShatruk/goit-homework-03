@@ -47,14 +47,15 @@ button {
 
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
     display: flex;
     align-items: center;
+    width: 1158px;
+    padding: 0 15px;
 }
 
 .header-navigation {
@@ -68,6 +69,7 @@ button {
     display: flex;
     margin-right: 332px;
     gap: 40px;
+    padding: 24px 0;
 }
 .header-menu-link {
     color: #2E2F42;
@@ -84,6 +86,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px
 
 }
 .logo-subject {
@@ -91,10 +94,9 @@ button {
 font-family: Raleway;
 font-size: 18px;
 font-weight: 700;
-line-height: 1.17; /* 116.667% */
+line-height: 1.17;
 letter-spacing: 0.02em;
 text-transform: uppercase;
-margin-right: 76px;
 }
 
 .header-address {
@@ -139,15 +141,13 @@ address {
 
 
 .hero {
-    
+    padding-bottom: 60px;
 }
 
 .hero-container {
     background-color:#2E2F42;
     width: 100%;
-    max-width: 1440px;
-    min-height: 600px;
-    padding: 0;
+    padding: 188px 472px 188px 472px;
 }
 
 .hero-title {
@@ -157,7 +157,7 @@ address {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496;
-    padding: 188px 472px 48px 472px;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -168,7 +168,8 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin: 0 634px 188px 634px;
+    margin-right: 160px;
+    margin-left: 160px;
     padding: 16px 32px;
 }
 
@@ -188,7 +189,7 @@ address {
 
 .features {
     background-color: #FFF;
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 120px;
 }
 .features-item {
@@ -220,6 +221,7 @@ address {
 /* ================================== */
 
 .team {
+    align-items: center;
     background-color:#F4F4FD;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -297,7 +299,22 @@ address {
     padding-bottom: 72px;
 }
 
-.portfolio-list-title {
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.portfolio-card {
+    flex-basis: calc((100%-48px)/3);
+}
+.portfolio-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 0;
+}
+
+.portfolio-card-title {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
@@ -305,7 +322,7 @@ address {
     letter-spacing: 0.02em;
 }
 
-.portfolio-list-text {
+.portfolio-card-text {
     color: #434455;
     font-size: 16px;
     line-height: 1.50;
@@ -320,7 +337,14 @@ address {
 
 .footer {
     background-color: #2E2F42;
+    width: 1440px;
+    height: 312px;
 }
+
+.fotter-container {
+
+}
+
 
 .logo {
 
