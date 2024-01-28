@@ -87,6 +87,7 @@ button {
 }
 
 .header-menu-item {
+    padding: 24px 0;
 }
 
 .header-menu-link {
@@ -366,14 +367,14 @@ address {
 
 
 .footer {
-    
+    padding: 100px 0
 }
 
 .footer-container {
     background-color: #2E2F42;
-    padding: 100px 0;
     display: flex;
     flex-direction: column;
+    padding: 100px 0;
 }
 
 
@@ -388,8 +389,11 @@ address {
     text-transform: uppercase;
     margin-right: 1169px;
     margin-left: 156px;
-    display: inline-block;
     margin-bottom: 16px;
+}
+
+.footer-container a{
+    display: inline-block;
 }
 
 .footer-logo-subject {
