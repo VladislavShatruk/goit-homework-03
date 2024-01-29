@@ -49,10 +49,9 @@ button {
   }
 
 .container {
-    width: 100%;
-    max-width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     }
 
@@ -165,11 +164,7 @@ address {
 
 .hero {
     padding: 188px 0;
-}
-
-.hero-container {
     background-color:#2E2F42;
-    padding: 188px 0;
 }
 
 .hero-title {
@@ -179,7 +174,9 @@ address {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
-    margin: 0 472px 48px 472px;
+    margin-right: auto;
+    margin-bottom: 48px;
+    margin-left: auto;
 }
 
 .hero-btn {
@@ -193,8 +190,8 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-right: 636px;
-    margin-left: 635px;
+    margin-right: auto;
+    margin-left: auto;
     border: none;
     border-radius: 4px;
 }
@@ -269,10 +266,7 @@ address {
 
 .team-card {
     background-color: #FFF;
-    display: flex;
-    flex-direction: column;
     width: calc((100% - 72px) / 4);
-    height: 348px;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -281,10 +275,7 @@ address {
 }
 
 .team-cart-content {
-    display: flex;
-    flex-direction: column;
     padding: 32px 0;
-    gap: 8px;
 }
 
 .team-list-title {
@@ -315,7 +306,6 @@ address {
     background-color: #FFF;
     padding-top: 120px;
     padding-bottom: 120px;
-    margin-bottom: 72px;
 }
 
 .portfolio-title {
@@ -338,9 +328,6 @@ address {
     width: calc((100% - 48px) / 3); 
 }
 .portfolio-card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -370,12 +357,10 @@ address {
 
 .footer {
     padding: 100px 0;
+    background-color: #2E2F42;
 }
 
 .footer-container {
-    background-color: #2E2F42;
-    padding: 100px 0;
-    height: 312px;
 }
 
 
@@ -388,8 +373,6 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 1169px;
-    margin-left: 156px;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -410,6 +393,4 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-right: 1020px;
-    margin-left: 156px;
 }
